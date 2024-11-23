@@ -25,7 +25,7 @@
     </nav>
     <div class="container align-items-center">
         <div class="jumbotron text-center bg-jumbo" style="background: rgb(12, 12, 12, 0.4) !important; ">
-            <h1 style="color: rgb(0, 255, 42); font-weight: bolder; font-size: 50px;"> Hello <span style="color: rgb(114, 235, 225);"> Foddie </span> </h1>
+            <h1 style="color: rgb(0, 255, 42); font-weight: bolder; font-size: 50px;"> Hello <span style="color: rgb(114, 235, 225);"> Foodie </span> </h1>
             <p class="lead" style="color: rgb(224, 252, 99);">Welcome to the City of Nawabs 🤴</p><br />
             <p class="lead">Have your ever wanted to eat 🍟 outside but can't decide on a restaurant?</p><br />
             <p>Let <span style="color: rgb(223, 236, 42); font-size: large;"><b>Restaurants Spotter</b></span> helps you!</p>
@@ -72,7 +72,31 @@
                     </div>
                     <div class="row text-center" style="margin-top: 5vh;">
                         <div class="col-12">
-                            <button class="submit-button"><img src="https://image.flaticon.com/icons/svg/1889/1889949.svg" width="25px" height="20px" class="mr-2">Get Restaurants</button>
+                            <button class="submit-button"><img src="/Users/faizkhan/Desktop/RS_Project3/Restaurant-Recommendation-System/static/application.png" width="25px" height="20px" class="mr-2">Get Restaurants</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" style="margin: 3rem auto;">
+        <div class="jumbotron text-center bg-jumbo" style="background: rgb(12, 12, 12, 0.4) !important;">
+            <h3 style="color: rgb(224, 252, 99);">Search by Restaurant Features</h3>
+            <p class="lead" style="color: white;">Looking for specific features? Try our text search!</p>
+            <div class="container justify-content-start">
+                <form action="{{ url_for('text_search') }}" method="POST">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="search_text" 
+                                       placeholder="Example: romantic ambiance with outdoor seating" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="submit-button">
+                                <img src="/Users/faizkhan/Desktop/RS_Project3/Restaurant-Recommendation-System/static/application.png" 
+                                     width="25px" height="20px" class="mr-2">Search Restaurants
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -81,9 +105,8 @@
     </div>
     <div class="container-fluid text-center">
         <div class=" text-center" style="padding: 0.2rem;background: rgb(12, 12, 12, 0.6);border: solid orange 2px;">
-            <span style="color: white; font-weight: bold;">Developed by <b style="color: chartreuse;"> Sarvesh Sharma</b></span>&emsp;
-            <a target="_blank " style="font-size:xx-large; color: #d5d7da; " href="https://github.com/shsarv "><i class="fa fa-github " aria-hidden="true "></i></a>&emsp;
-            <a target="_blank " style="font-size:xx-large; color: #0077B5; " href="https://www.linkedin.com/in/sarvesh-kumar-sharma-869a1b185/ "><i class="fa fa-linkedin-square " aria-hidden="true "></i>
+            <span style="color: white; font-weight: bold;">Developed by <b style="color: chartreuse;">Faiz Khan, Kevin Suvarna, Amey Agarwal</b></span>&emsp;
+            <a target="_blank " style="font-size:xx-large; color: #0077B5; " href="https://www.linkedin.com/faizkh7 "><i class="fa fa-linkedin-square " aria-hidden="true "></i>
             </i></a>
         </div>
     </div>
